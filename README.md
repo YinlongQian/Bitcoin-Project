@@ -9,8 +9,8 @@ I want to send .25 Bitcoin to someone but all I have is a whole Bitcoin in my po
   
 The address id(addrID) represents the new owner of the money, when I use the word, "someone", or "myself" in the previous example I ment addrIDs.  
   
-Users money is stored in the form of unspent transaction outputs(txout.dat). In order to find the value of someones you would count the unspent outputs that share an addrID of the individual.  
+Each input contains a reference to the output it is using. This is stored in the previous transaction id(prev_txID). 
   
-Each input contains a reference to the output it is using. This is stored in the previous transaction id(prev_txID).  
+Users money is stored in the form of unspent transaction outputs(txout.dat). In order to find the value of someones you would count the unspent outputs that share an addrID of the individual. An unspent output is one where there is no input which references it in its prev_txID.   
   
 [Here](https://en.bitcoin.it/wiki/Transaction#Input) is another explanation if mine was lacking.
