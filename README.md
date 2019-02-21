@@ -1,5 +1,6 @@
-#Bitcoin Project
+Bitcoin Project
 ---
+
 Each row from the txin.dat file is called a transaction input. Each row from the txout.dat file is called a transaction output.  
   
 A single transaction is composed of transaction inputs and transaction outputs. These share a common transaction id(txID). Each input is associated with one output. I was first confused when I saw that there can be multiple input/output pairs, so I will provide an example and try to define some terms.  
@@ -12,4 +13,4 @@ Users money is stored in the form of unspent transaction outputs(txout.dat). In 
   
 Each input contains a reference to the output it is using. This is stored in the previous transaction id(prev_txID).  
   
-[Here](https://en.bitcoin.it/wiki/Transaction#Input) is another explanation of mine was lacking.
+[Here](https://en.bitcoin.it/wiki/Transaction#Input) is another explanation if mine was lacking.
